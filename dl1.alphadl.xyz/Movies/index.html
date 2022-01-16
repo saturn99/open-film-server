@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://dl1.alphadl.xyz/fancy-index-theme-dark/styles.css">
+        <script type="text/javascript" src="http://dl1.alphadl.xyz/fancy-index-theme-dark/jquery.min.js"></script>
+    </head>
+<body>
+<div id="raw_include_HEADER_md"></div>
+<h1>Directory:
+/Movies/</h1>
+<table id="list"><thead><tr><th style="width:55%"><a href="http://dl1.alphadl.xyz/Movies/?C=N&amp;O=A">File Name</a>&nbsp;<a href="http://dl1.alphadl.xyz/Movies/?C=N&amp;O=D">&nbsp;&darr;&nbsp;</a></th><th style="width:20%"><a href="http://dl1.alphadl.xyz/Movies/?C=S&amp;O=A">File Size</a>&nbsp;<a href="http://dl1.alphadl.xyz/Movies/?C=S&amp;O=D">&nbsp;&darr;&nbsp;</a></th><th style="width:25%"><a href="http://dl1.alphadl.xyz/Movies/?C=M&amp;O=A">Date</a>&nbsp;<a href="http://dl1.alphadl.xyz/Movies/?C=M&amp;O=D">&nbsp;&darr;&nbsp;</a></th></tr></thead>
+<tbody><tr><td class="link"><a href="../index.html">Parent directory/</a></td><td class="size">-</td><td class="date">-</td></tr>
+<tr><td class="link"><a href="1952/index.html" title="1952">1952/</a></td><td class="size">-</td><td class="date">2021-Nov-14 20:34</td></tr>
+<tr><td class="link"><a href="1973/index.html" title="1973">1973/</a></td><td class="size">-</td><td class="date">2022-Jan-08 06:38</td></tr>
+<tr><td class="link"><a href="1981/index.html" title="1981">1981/</a></td><td class="size">-</td><td class="date">2022-Jan-07 07:23</td></tr>
+<tr><td class="link"><a href="2004/index.html" title="2004">2004/</a></td><td class="size">-</td><td class="date">2021-Dec-13 11:43</td></tr>
+<tr><td class="link"><a href="2005/index.html" title="2005">2005/</a></td><td class="size">-</td><td class="date">2022-Jan-08 07:48</td></tr>
+<tr><td class="link"><a href="2008/index.html" title="2008">2008/</a></td><td class="size">-</td><td class="date">2022-Jan-08 07:43</td></tr>
+<tr><td class="link"><a href="2010/index.html" title="2010">2010/</a></td><td class="size">-</td><td class="date">2022-Jan-08 07:27</td></tr>
+<tr><td class="link"><a href="2012/index.html" title="2012">2012/</a></td><td class="size">-</td><td class="date">2021-Dec-13 12:16</td></tr>
+<tr><td class="link"><a href="2014/index.html" title="2014">2014/</a></td><td class="size">-</td><td class="date">2021-Nov-30 18:17</td></tr>
+<tr><td class="link"><a href="2015/index.html" title="2015">2015/</a></td><td class="size">-</td><td class="date">2021-Dec-13 12:15</td></tr>
+<tr><td class="link"><a href="2016/index.html" title="2016">2016/</a></td><td class="size">-</td><td class="date">2021-Nov-17 13:23</td></tr>
+<tr><td class="link"><a href="2017/index.html" title="2017">2017/</a></td><td class="size">-</td><td class="date">2021-Dec-13 08:29</td></tr>
+<tr><td class="link"><a href="2018/index.html" title="2018">2018/</a></td><td class="size">-</td><td class="date">2021-Dec-28 19:38</td></tr>
+<tr><td class="link"><a href="2019/index.html" title="2019">2019/</a></td><td class="size">-</td><td class="date">2021-Nov-14 20:32</td></tr>
+<tr><td class="link"><a href="2021/index.html" title="2021">2021/</a></td><td class="size">-</td><td class="date">2022-Jan-11 12:44</td></tr>
+<tr><td class="link"><a href="2022/index.html" title="2022">2022/</a></td><td class="size">-</td><td class="date">2022-Jan-16 15:30</td></tr>
+<tr><td class="link"><a href="Collection/index.html" title="Collection">Collection/</a></td><td class="size">-</td><td class="date">2021-Nov-19 09:29</td></tr>
+</tbody></table><div id="raw_include_README_md"></div>
+    <script src="https://unpkg.com/xregexp/xregexp-all.js"></script>
+    <script type="text/javascript" src="http://dl1.alphadl.xyz/fancy-index-theme-dark/addNginxFancyIndexForm.js"></script>
+    <script type="text/javascript" src="http://dl1.alphadl.xyz/fancy-index-theme-dark/showdown.min.js"></script>
+    <script type="text/javascript" defer>
+    var converter = new showdown.Converter({tables: true});
+    $( "#raw_include_HEADER_md" ).load( "HEADER.md", function (){
+        var elem = document.querySelector("#raw_include_HEADER_md");
+        // strip leading whitespace so it isn't evaluated as code
+        var text = elem.innerHTML;
+        // console.log("text =", text);
+        text = text.replace(/\n[ ]*/g, '\n');
+        // console.log("text =", text);
+        var html = converter.makeHtml(text);
+        // console.log("html =", html);
+        // here, have some HTML
+        elem.innerHTML = html;
+    });
+    $( "#raw_include_README_md" ).load( "README.md", function (){
+        var elem = document.querySelector("#raw_include_README_md");
+        // strip leading whitespace so it isn't evaluated as code
+        var text = elem.innerHTML;
+        // console.log("text =", text);
+        text = text.replace(/\n[ ]*/g, '\n');
+        // console.log("text =", text);
+        var html = converter.makeHtml(text);
+        // console.log("html =", html);
+        // here, have some HTML
+        elem.innerHTML = html;
+    });
+</script>
+</body>
+</html>
