@@ -16,7 +16,7 @@ echo $s
 
 dirname=$(echo $s | sed -e 's_https\?://__g')
 
-wget --no-check-certificate -N -e robots=off -A "*.html" -r -l 0 -p --convert-links --no-parent "$s"
+/bin/bash wgetcon.sh $s
 
 if [ ${updateindex:-"n"} == "y" ]
 then
