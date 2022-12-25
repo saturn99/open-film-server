@@ -1,3 +1,3 @@
 #!/bin/bash
 
-cat list | httpx -silent -sc -location -title -ip > list.info.txt
+cat list | httpx -nc -silent -sc -location -title -ip | tee list.info.txt
