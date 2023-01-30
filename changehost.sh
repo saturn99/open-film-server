@@ -3,13 +3,13 @@
 SEARCH_PATH=${1:?"Please Set SEARCH_PATH"}
 
 ORIGIN_STR=${2:?"Please set string for must be replace"}
-REPLACE_NAME=${2:?"Please set replace name"}
+REPLACE_NAME=${3:?"Please set replace name"}
 
 
 find "$SEARCH_PATH" -type f | \
 while read file
 do
-	sed -i -e "s_"$SEARCH_PATH"_"$REPLACE_NAME"_g" "$file"
+	sed -i -e "s_"$ORIGIN_STR"_"$REPLACE_NAME"_g" "$file"
 done
 
 echo "**************************"
